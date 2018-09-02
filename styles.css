@@ -1,0 +1,32 @@
+/*
+ * Base structure
+ */
+
+body {
+  background-color: #222;
+  color: #DDD;
+}
+
+.centered-header {
+  text-align: center;
+}
+.gold {
+  color: rgb(169, 133, 45);
+}
+
+input {
+  width: 100%;
+}
+select {
+  width: 100%;
+}
+
+/*
+ * Typography
+ */
+
+h1 {
+  margin-bottom: 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rito Pls Tools</title>
+
+  </head>
+  <body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="centered-header">Rito Pls Tools</h1>
+      </div>
+    </div>
+    <div class="row">
+      <button id="region_swap_button" class="col-6">Swap Regions</button>
+      <select id="region_swap_select" class="col-6">
+      </select>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        Current region is: <b id="region_swap_text"></b>
+      </div>
+    </div>
+    <div class="row">
+      <button id="settings_save_button" class="col-6">Back up settings</button>
+      <input class="col-6" type="text" id="settings_save_text" placeholder="Profile name"/>
+    </div>
+    <div class="row">
+      <button id="settings_load_button" class="col-6">Load settings</button>
+      <select id="settings_load_select" class="col-6">
+      </select>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        The currently selected settings file is: <b id="settings_selected_text"></b>
+      </div>
+    </div>
+  </div>
+  </body>
+  <script>
+    require('./renderer.js');
+  </script>
+</html>
