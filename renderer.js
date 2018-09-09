@@ -3,7 +3,9 @@
 // All of the Node.js APIs are available in this process.
 var $ = require('jquery');
 window.$ = $;
+window.jQuery = $;
 require('bootstrap');
+require('select2');
 var fs = require('fs');
 var crypto = require('crypto');
 
@@ -87,6 +89,8 @@ function load_initial_app_state(){
       text: known_profiles[md5]
     }));
   }
+
+  settings_load_select.select2();
 }
 
 function load_profile(){

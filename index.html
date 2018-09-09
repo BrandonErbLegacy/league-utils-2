@@ -11,34 +11,37 @@
 
   </head>
   <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="centered-header">Rito Pls Tools</h1>
+  <div class="container-fluid outer-floater">
+
+    <div class="container-fluid floater">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="centered-header">Rito Pls Tools</h1>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <button id="region_swap_button" class="col-6">Swap Regions</button>
-      <select id="region_swap_select" class="col-6">
-      </select>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        Current region is: <b id="region_swap_text"></b>
+      <div class="row">
+        <select id="region_swap_select" class="col-12">
+        </select>
+        <button id="region_swap_button" class="col-12">Swap Regions</button>
       </div>
-    </div>
-    <div class="row">
-      <button id="settings_save_button" class="col-6">Back up settings</button>
-      <input class="col-6" type="text" id="settings_save_text" placeholder="Profile name"/>
-    </div>
-    <div class="row">
-      <button id="settings_load_button" class="col-6">Load settings</button>
-      <select id="settings_load_select" class="col-6">
-      </select>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        The currently selected settings file is: <b id="settings_selected_text"></b>
+      <div class="row">
+        <div class="col-12">
+          Current region is: <b id="region_swap_text"></b>
+        </div>
+      </div>
+      <div class="row pad-top">
+        <input class="col-12" type="text" id="settings_save_text" placeholder="Profile name"/>
+        <button id="settings_save_button" class="col-12">Back up settings</button>
+      </div>
+      <div class="row pad-top">
+        <select id="settings_load_select" class="col-12">
+        </select>
+        <button id="settings_load_button" class="col-12">Load settings</button>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          The currently selected settings file is: <b id="settings_selected_text"></b>
+        </div>
       </div>
     </div>
   </div>

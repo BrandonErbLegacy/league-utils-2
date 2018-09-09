@@ -3,7 +3,11 @@
  */
 
 body {
-  background-color: #222;
+  background: url('assets/A400B771E92CFE82.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #DDD;
 }
 
@@ -13,7 +17,39 @@ body {
 .gold {
   color: rgb(169, 133, 45);
 }
+.outer-floater {
+  padding: 30px;
+}
+.floater {
+  padding: 40px;
+  margin: auto;
+  margin-top: 50px;
+  min-width: 500px;
+  max-width: 700px;
+  background-color: rgba(0,0,0,.5);
+}
+.pad-top {
+  margin-top: 20px;
+}
 
+button, select, input {
+  border: 1px solid rgb(169, 133, 45);
+  background-color: rgb(30, 35, 42);
+  color: rgb(189, 182, 167);
+  padding: 5px;
+  margin-top: 2px;
+  font-family: open sans,helveticaneue,helvetica neue,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+}
+select option:checked:after {
+    content: attr(title);
+    background: #666;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border: none;
+}
 input {
   width: 100%;
 }
